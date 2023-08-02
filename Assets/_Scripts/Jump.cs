@@ -8,17 +8,14 @@ public class Jump : MonoBehaviour
     public static bool isGrounded;
 
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         isGrounded = true;
     }
-
-    private void OnCollisionExit2D(Collision2D collision)
+    private void OnTriggerExit2D(Collider2D collision)
     {
-       isGrounded = false;
+        isGrounded = false;
     }
-
-
 
 
 }
